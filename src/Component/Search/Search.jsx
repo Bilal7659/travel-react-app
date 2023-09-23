@@ -1,14 +1,13 @@
-import React, {useEffect} from "react";
-import Aos from 'aos'
+import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Search.css'
+AOS.init();
 const Search = () => {
-  useEffect(()=>{
-    Aos.init();
-  },[])
   return (
     <div id='book' className="search">
       <div className="container">
-        <div className="left"data-aos="fade-right">
+        <div className="left"data-aos="fade-up">
           <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>
           <p>
             Come experience the very pinnacle of luxury Caribbean all-inclusive
@@ -41,7 +40,7 @@ const Search = () => {
           </div>
           </div>
         </div>
-        <div className="right"data-aos="fade-left">
+        <div className="right"data-aos="fade-up">
             <div className="promo">
                 <div className="save">Get An Additional 7% off</div>
                 <div className="timer">12 hours left</div>

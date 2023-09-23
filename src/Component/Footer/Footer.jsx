@@ -4,16 +4,15 @@ import { AiFillFacebook, AiFillYoutube} from 'react-icons/ai'
 import { BsTwitter, BsInstagram, BsTelephonePlusFill, BsFillEnvelopePaperFill, BsLinkedin} from 'react-icons/bs'
 import {FaMapMarkerAlt, FaMapPin} from 'react-icons/fa'
 import { useEffect } from 'react'
-import Aos from 'aos'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const Footer = () => {
-    useEffect(()=>{
-        Aos.init();
-    },[])
   return (
     <div>
         <footer className="footer-distributed">
 
-<div className="footer-left" data-aos="fade-left">
+<div className="footer-left" data-aos="fade-up">
     <h3>Pak<span>Visits</span><FaMapPin style={{color:'#FF0000'}}/></h3>
 
     <p className="footer-links">
@@ -43,7 +42,7 @@ const Footer = () => {
         <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
     </div>
 </div>
-<div className="footer-right" data-aos="fade-right">
+<div className="footer-right" data-aos="fade-up">
     <p className="footer-company-about">
         <span>About the company</span>
         <strong>PakVisits!</strong> is a tour base company with Pakvisit you can be able to 
